@@ -1,0 +1,25 @@
+
+  <ul>
+    <div>
+      <table>
+        <tr>
+          <td  *ngFor="let reason of reasons">
+              {{reason}}
+          </td>
+        </tr>
+        <tr *ngFor="let item of durations | keyvalue">
+          <td *ngFor="let reason of reasons">
+              {{ item.value[reason] | json }}
+          </td>
+        </tr>
+        <tr>
+            <td>
+              Toplam
+            </td>
+            <td *ngFor="let reasonTotal of reasonTotals">
+            {{reasonTotal.Total}}
+            </td>
+        </tr>
+      </table>
+    </div>
+  </ul>

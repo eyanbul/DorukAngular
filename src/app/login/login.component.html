@@ -1,0 +1,39 @@
+<div class="landing-page">
+  <div class="header-spacer--standard"></div>
+
+    <div class="row display-flex">
+        <div class="registration-login-form">
+             <div class="title h6">Login to your Account</div>
+              <form class="content" #loginForm>
+                <div class="row">
+                  <div class="col col-12 col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                    <div class="form-group label-floating is-empty">
+                      <input class="form-control" name="username" placeholder="Your Email" type="email">
+                      <span class="material-input"></span></div>
+                    <div class="form-group label-floating is-empty">
+                      <input class="form-control" name="password" placeholder="Your Password" type="password">
+                      <span class="material-input"></span></div>
+                    <div class="remember">
+
+                      <div class="checkbox">
+                        <label>
+                          <input name="optionsCheckboxes" type="checkbox"><span class="checkbox-material"><span
+                              class="check"></span></span>
+                          Remember Me
+                        </label>
+                      </div>
+                      <a href="#" class="forgot">Forgot my Password</a>
+                    </div>
+
+                    <a class="btn btn-lg btn-primary full-width" (click)="onLogin(loginForm)">Login</a>
+
+                    <div class="or"></div>
+
+                    <p>Don’t you have an account? <a href="#">Register Now!</a> it’s really simple and you can start
+                      enjoing all the benefits!</p>
+                  </div>
+                </div>
+              </form>
+        </div>
+    </div>  
+</div>
